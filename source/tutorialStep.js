@@ -149,7 +149,8 @@ const styles =  StyleSheet.create({
   },
   tooltip: {
     backgroundColor: '#ffffff',
-    borderColor: 'rgba(216, 213, 212, 0.8)',
+    borderWidth: 1,
+    borderColor: 'rgba(0, 0, 0, .5)',
     borderRadius: 8,
     overflow: 'hidden',
     position: 'absolute',
@@ -181,7 +182,7 @@ const styles =  StyleSheet.create({
     height: null,
   },
   overlay: {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
     position: 'absolute',
   },
   button: {

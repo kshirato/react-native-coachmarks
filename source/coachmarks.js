@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     right: 0,
-    backgroundColor:'rgba(0,0,0,0.5)',
+    backgroundColor:'rgba(0,0,0,0.8)',
   },
   container: {
     width: 300,
