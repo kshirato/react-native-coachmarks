@@ -92,7 +92,7 @@ export default class TurtorialStep extends Component {
               {okEnable && <Button title="OK" onPress={() => this.OKButton()} />}
             </View>
           }
-          {okEnable &&
+          {/* {okEnable &&
             <View style={[{ width: this.props.style.width, height: this.props.style.height }, this.props.position]}>
               <View style={[this.props.style, styles.coachMarks]} />
               {isCircleMask &&
@@ -107,8 +107,8 @@ export default class TurtorialStep extends Component {
                 />
               }
             </View>
-          }
-          {!okEnable &&
+          } */}
+          {true &&
             <View style={[{ width: this.props.style.width, height: this.props.style.height }, this.props.position]}>
               {isCircleMask &&
               <Image
