@@ -24,6 +24,7 @@ export default class CoachMarks extends Component {
     numberOfSteps: PropTypes.number,
     coachMarks: PropTypes.array,
     visible: PropTypes.bool,
+    skipStartView: PropTypes.bool,
     congratsText: PropTypes.string,
     startButtonText: PropTypes.string,
     skipButtonText: PropTypes.string,
@@ -34,6 +35,7 @@ export default class CoachMarks extends Component {
 
   state = {
     stepStates: [],
+    skipStart: false,
     isStarting: false,
     isEnding: false,
   }
@@ -52,7 +54,7 @@ export default class CoachMarks extends Component {
           this.dismiss();
         }}
       >
-        {!this.state.isStarting &&
+        {!this.props.isStarting &&
           <View style={styles.visibleContainer}>
             <TouchableOpacity style={styles.backArea} activeOpacity={1} />
             <View style={styles.scene}>
@@ -184,7 +186,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     right: 0,
-    backgroundColor:'rgba(0,0,0,0.8)',
+    backgroundColor:'rgba(0,0,0,0)',
   },
   container: {
     width: 300,
